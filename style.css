@@ -12,23 +12,21 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-}
-
-.container {
-  text-align: center;
+  overflow: hidden;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   padding: 40px 50px;
-  border-radius: 20px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
-  animation: fadeIn 1s ease;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+  z-index: 2;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -45,16 +43,11 @@ p {
 }
 
 button {
-  padding: 12px 28px;
+  padding: 12px 30px;
   font-size: 18px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-button:hover {
-  transform: scale(1.05);
 }
 
 #yesBtn {
@@ -68,13 +61,9 @@ button:hover {
   position: absolute;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
