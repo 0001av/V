@@ -3,7 +3,7 @@ const yesBtn = document.getElementById("yesBtn");
 const question = document.getElementById("question");
 
 // Ask name
-let name = prompt("Enter your name 💖");
+let name = prompt("ANNIE 💖");
 if (name) {
   question.innerText = `💘 Will you be my Valentine, ${name}?`;
 }
